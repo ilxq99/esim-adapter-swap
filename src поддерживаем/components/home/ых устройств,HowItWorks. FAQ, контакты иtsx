@@ -1,0 +1,70 @@
+
+import { Button } from "@/components/ui/button страницу покупки.";
+import { Link } from 'react-router-dom';
+
+const HowItWorks = () => {
+  const steps = [
+    {
+      number: '01',
+      title: 'Приобретите адаптер',
+      description: 'Закажите адаптер Switch eSIM, подходящий для вашего устройства'
+    },
+    {
+      number: '02',
+      title: 'Установите адаптер',
+      description: 'Следуйте простой инструкции по установке адаптера в ваше устройство'
+    },
+    {
+      number: '03',
+      title: 'Активируйте eSIM',
+      description: 'Загрузите нужные eSIM профили через приложение или QR-код'
+    },
+    {
+      number: '04',
+      title: 'Пользуйтесь сервисом',
+      description: 'Наслаждайтесь всеми преимуществами eSIM на вашем устройстве'
+    }
+  ];
+  
+  return (
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl font-bold text-dark mb-4">Как это работает</h2>
+          <p className="text-gray-600">
+            Начните использовать eSIM на любом устройстве всего за несколько простых шагов
+          </p>
+        </div>
+        
+        <div className="relative">
+          {/* Соединительная линия */}
+          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gray-200 transform -translate-y-1/2 z-0"></div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative animate-fade-in"
+                style={{ animationDelay: `${0.2 * (index + 1)}s` }}
+              >
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4 mx-auto md:mx-0">
+                  <span className="font-bold">{step.number}</span>
+                </div>
+                <h3 className="text-lg font-semibold text-dark mb-2 text-center md:text-left">{step.title}</h3>
+                <p className="text-gray-600 text-center md:text-left">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <Link to="/purchase">Приобрести адаптер</Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorks;
