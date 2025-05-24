@@ -22,10 +22,10 @@ const Header = () => {
           {/* Логотип */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-indigo-600 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
+              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="bg-gradient-to-r from-primary to-indigo-600 bg-clip-text text-transparent font-bold text-xl">
+              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-bold text-xl">
                 Switch eSIM
               </span>
             </Link>
