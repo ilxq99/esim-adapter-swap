@@ -1,6 +1,5 @@
-
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -11,53 +10,66 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import Icon from '@/components/ui/icon';
+import Icon from "@/components/ui/icon";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-lg shadow-sm z-50 border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18">
           {/* Логотип */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
-              <span className="text-primary font-bold text-xl">Switch eSIM</span>
+            <Link to="/" className="flex items-center group">
+              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-indigo-600 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
+                <span className="text-white font-bold text-lg">S</span>
+              </div>
+              <span className="bg-gradient-to-r from-primary to-indigo-600 bg-clip-text text-transparent font-bold text-xl">
+                Switch eSIM
+              </span>
             </Link>
           </div>
-          
+
           {/* Основная навигация (десктоп) */}
           <nav className="hidden md:flex space-x-1">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link to="/">
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
                       Главная
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                
+
                 <NavigationMenuItem>
                   <Link to="/devices">
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
                       Устройства
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                
+
                 <NavigationMenuItem>
                   <Link to="/faq">
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
                       FAQ
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                
+
                 <NavigationMenuItem>
                   <Link to="/contacts">
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
                       Контакты
                     </NavigationMenuLink>
                   </Link>
@@ -65,14 +77,14 @@ const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
           </nav>
-          
+
           {/* Кнопка купить (десктоп) */}
           <div className="hidden md:flex items-center">
             <Button asChild>
               <Link to="/buy">Купить</Link>
             </Button>
           </div>
-          
+
           {/* Кнопка мобильного меню */}
           <div className="md:hidden flex items-center">
             <button
@@ -91,7 +103,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Мобильное меню */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
@@ -126,7 +138,9 @@ const Header = () => {
             </Link>
             <div className="pt-2">
               <Button asChild className="w-full justify-center">
-                <Link to="/buy" onClick={() => setMobileMenuOpen(false)}>Купить</Link>
+                <Link to="/buy" onClick={() => setMobileMenuOpen(false)}>
+                  Купить
+                </Link>
               </Button>
             </div>
           </div>
