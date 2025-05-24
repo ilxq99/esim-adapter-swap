@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50 py-20 lg:py-32">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width=%2260%22%20height=%2260%22%20viewBox=%220%200%2060%2060%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg%20fill=%22none%22%20fill-rule=%22evenodd%22%3E%3Cg%20fill=%22%23e2e8f0%22%20fill-opacity=%220.3%22%3E%3Ccircle%20cx=%2230%22%20cy=%2230%22%20r=%221.5%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -11,13 +11,13 @@ const Hero = () => {
             className="order-2 lg:order-1 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-600 text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-teal-500 rounded-full mr-2 animate-pulse"></span>
               Революция в мире eSIM
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-[1.1] tracking-tight">
               Добавьте{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent">
                 eSIM
               </span>{" "}
               в любое устройство
@@ -30,7 +30,7 @@ const Hero = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 text-lg font-semibold"
+                className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 text-lg font-semibold"
               >
                 <Link to="/buy">Купить сейчас</Link>
               </Button>
@@ -38,14 +38,14 @@ const Hero = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all duration-300 px-8 py-4 text-lg font-semibold"
+                className="border-2 border-slate-300 hover:border-teal-500 hover:bg-teal-50 transition-all duration-300 px-8 py-4 text-lg font-semibold"
               >
                 <Link to="/devices">Проверить совместимость</Link>
               </Button>
             </div>
             <div className="grid grid-cols-3 gap-8">
               <div className="flex items-center space-x-3">
-                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -85,7 +85,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -112,15 +112,15 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <div className="relative">
-              <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/30 to-indigo-500/30 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-full blur-3xl"></div>
+              <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-primary/30 to-cyan-500/30 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-to-br from-teal-500/30 to-cyan-500/30 rounded-full blur-3xl"></div>
               <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-white/50">
                 <img
                   src="https://images.unsplash.com/photo-1611464908929-914c562ba4c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
                   alt="Switch eSIM адаптер"
                   className="rounded-2xl shadow-lg max-w-full h-auto"
                 />
-                <div className="absolute -top-4 -right-4 bg-gradient-to-br from-primary to-indigo-600 text-white p-4 rounded-2xl shadow-lg border-4 border-white">
+                <div className="absolute -top-4 -right-4 bg-gradient-to-br from-primary to-cyan-600 text-white p-4 rounded-2xl shadow-lg border-4 border-white">
                   <div className="text-xs font-medium opacity-90">
                     Поддержка до
                   </div>
