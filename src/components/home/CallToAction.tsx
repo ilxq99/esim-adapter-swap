@@ -26,7 +26,7 @@ const CallToAction = () => {
               asChild
               size="lg"
               variant="outline"
-              className="text-white border-white hover:bg-white/20"
+              className="bg-blue-500 text-white border-blue-500 hover:bg-blue-600 hover:border-blue-600"
             >
               <Link to="/devices">Проверить совместимость</Link>
             </Button>
