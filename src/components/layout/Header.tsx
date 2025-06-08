@@ -22,10 +22,10 @@ const Header = () => {
           {/* Логотип */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
-              <div className="h-10 w-10 rounded-xl bg-teal-600 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
+              <div className="h-10 w-10 rounded-xl bg-cyan-700 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="text-teal-600 font-bold text-xl">
+              <span className="text-cyan-700 font-bold text-xl">
                 Switch eSIM
               </span>
             </Link>
@@ -82,7 +82,7 @@ const Header = () => {
           <div className="hidden md:flex items-center">
             <Button
               asChild
-              className="bg-blue-500 hover:bg-blue-600 text-white"
+              className="bg-cyan-600 hover:bg-cyan-700 text-white"
             >
               <Link to="/buy">Купить</Link>
             </Button>
