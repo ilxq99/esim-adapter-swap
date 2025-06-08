@@ -18,7 +18,7 @@ const CallToAction = () => {
               asChild
               size="lg"
               variant="secondary"
-              className="text-primary hover:bg-white"
+              className="text-teal-600 hover:bg-white"
             >
               <Link to="/purchase">Приобрести адаптер</Link>
             </Button>
