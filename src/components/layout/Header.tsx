@@ -16,16 +16,16 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-white/90 via-teal-50/80 to-cyan-50/80 backdrop-blur-lg shadow-sm z-50 border-b border-slate-100">
+    <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-lg shadow-sm z-50 border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Логотип */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
+              <div className="h-10 w-10 rounded-xl bg-teal-600 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-200">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent font-bold text-xl">
+              <span className="text-teal-600 font-bold text-xl">
                 Switch eSIM
               </span>
             </Link>
