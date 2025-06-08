@@ -80,7 +80,10 @@ const Header = () => {
 
           {/* Кнопка купить (десктоп) */}
           <div className="hidden md:flex items-center">
-            <Button asChild>
+            <Button
+              asChild
+              className="bg-blue-500 hover:bg-blue-600 text-white"
+            >
               <Link to="/buy">Купить</Link>
             </Button>
           </div>
