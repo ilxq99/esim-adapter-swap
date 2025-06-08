@@ -16,7 +16,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-lg shadow-sm z-50 border-b border-slate-100">
+    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-white/90 via-teal-50/80 to-cyan-50/80 backdrop-blur-lg shadow-sm z-50 border-b border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Логотип */}
