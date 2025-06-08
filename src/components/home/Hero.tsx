@@ -12,8 +12,7 @@ const Hero = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-600 text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-teal-500 rounded-full mr-2 animate-pulse"></span>
-              Революция в мире eSIM
+              Прорыв в мире eSIM
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-[1.1] tracking-tight">
               Добавьте <span className="text-teal-600">eSIM</span> в любое
